@@ -12,6 +12,7 @@ def read_input(input_file_dir):
         right.append(int(location[1]))
     return left, right
 
+# Part 1
 def calculate_distance(left, right):
     total_distance = 0
     left.sort()
@@ -20,6 +21,7 @@ def calculate_distance(left, right):
         total_distance += (math.fabs(left[i] - right[i]))
     return total_distance
 
+# Part 2
 def calculate_similarity_score(left, right):
     occurance = {}
     score = 0
