@@ -15,21 +15,16 @@ def scan_values(target, values, current):
         return False
     operators = ['add', 'multiply', 'combine']
     for operator in operators:
+        update = 0
         if operator == 'add':
             update = current + values[0]
-            is_target = scan_values(target, values[1:], update)
-            if is_target:
-                return is_target
         if operator == 'multiply':
             update = current * values[0]
-            is_target = scan_values(target, values[1:], update)
-            if is_target:
-                return is_target
         if operator == 'combine':
             update = int(str(current) + str(values[0]))
-            is_target = scan_values(target, values[1:], update)
-            if is_target:
-                return is_target
+        is_target = scan_values(target, values[1:], update)
+        if is_target:
+            return is_target
     return False
 
 def get_total_calibration(targets_list, values_list):
