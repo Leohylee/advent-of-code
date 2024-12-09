@@ -59,6 +59,5 @@ def calculate_mul(memory_input):
             enable_idx = 0
     return product
 
-if __name__ == "__main__":
-    memory = read_input('./input.txt')
-    print(calculate_mul(memory))
+memory = read_input('./input.txt')
+print(calculate_mul(memory))

@@ -62,8 +62,6 @@ def calculate_total_after_correction(rules, updates):
             sum += int(update[int(mid)])
     return sum
 
-
-if __name__ == "__main__":
-    rules_input, updates_input = read_input('./input.txt')
-    print(calculate_total_after_correction(process_rules(rules_input), updates_input))
+rules_input, updates_input = read_input('./input.txt')
+print(calculate_total_after_correction(process_rules(rules_input), updates_input))
 

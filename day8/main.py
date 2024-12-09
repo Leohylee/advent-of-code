@@ -29,9 +29,8 @@ def populate_antinode(raw_map, antenna_map):
     sorted(antinodes)
     return len(antinodes)
 
-if __name__ == "__main__":
-    map_input, antenna_map_input = read_input('./input.txt')
-    print(populate_antinode(map_input, antenna_map_input))
+map_input, antenna_map_input = read_input('./input.txt')
+print(populate_antinode(map_input, antenna_map_input))
 
 
 # antenna_map = {antenna: {[x, y]...}...}

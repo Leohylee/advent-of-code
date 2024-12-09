@@ -42,7 +42,6 @@ def count_safe_with_dampener(reports_input):
                     break
     return cnt
 
-if __name__ == "__main__":
-    reports = read_input('./input.txt')
-    print(count_safe_with_dampener(reports))
+reports = read_input('./input.txt')
+print(count_safe_with_dampener(reports))
 

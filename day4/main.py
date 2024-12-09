@@ -50,10 +50,6 @@ def scan_messages_v2(messages, target):
                     occurrences += 1
     return occurrences
 
-
-
-
-if __name__ == "__main__":
-    messages_input = read_input('./input.txt')
-    print(scan_messages_v2(messages_input, 'MAS'))
+messages_input = read_input('./input.txt')
+print(scan_messages_v2(messages_input, 'MAS'))
 

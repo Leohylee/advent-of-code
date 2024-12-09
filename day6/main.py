@@ -55,9 +55,7 @@ def count_move(guard_map):
                     cnt += 1
         return cnt
 
-
-if __name__ == "__main__":
-    lines_input = read_input('./input.txt')
-    print(count_move(lines_input))
+lines_input = read_input('./input.txt')
+print(count_move(lines_input))
 
 # ^<>v

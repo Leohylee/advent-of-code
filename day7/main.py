@@ -36,6 +36,5 @@ def get_total_calibration(targets_list, values_list):
                 cnt += int(targets_list[i])
     return cnt
 
-if __name__ == "__main__":
-    targets_input, values_input = read_input('./input.txt')
-    print(get_total_calibration(targets_input, values_input))
+targets_input, values_input = read_input('./input.txt')
+print(get_total_calibration(targets_input, values_input))

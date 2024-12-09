@@ -35,8 +35,7 @@ def calculate_similarity_score(list_left, list_right):
             score += number * occurrence[number]
     return score
 
-if __name__ == "__main__":
-    left, right = read_input('./input.txt')
-    print(calculate_similarity_score(left, right))
+left, right = read_input('./input.txt')
+print(calculate_similarity_score(left, right))
 
 
